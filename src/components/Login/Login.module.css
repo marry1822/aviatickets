@@ -1,0 +1,33 @@
+.login {
+	display: flex;
+	min-height: 100vh;
+	overflow: hidden;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginContainer {
+	min-width: 50%;
+	min-height: 50%;
+	max-width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 1200px) {
+	.loginContainer {
+		max-width: 970px;
+	}
+}
+@media (max-width: 992px) {
+	.loginContainer {
+		max-width: 750px;
+	}
+}
+@media (max-width: 767px) {
+	.loginContainer {
+		max-width: 500px;
+	}
+}

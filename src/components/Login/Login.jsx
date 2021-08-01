@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
-import s from "../components/Login.module.css";
-import LoginReduxForm from "../components/LoginForm";
-import { toggleIsLoggedIn } from "../store/loginReducer";
+import s from "../Login/Login.module.css";
+import LoginReduxForm from "../Login/LoginForm";
+import { toggleIsLoggedIn } from "../../store/loginReducer";
 
 const Login = () => {
 	const dispatch = useDispatch();
@@ -24,13 +24,15 @@ const Login = () => {
 		}
 	};
 
-	if (isLoggedIn===true) {
+	if (isLoggedIn === true) {
 		return <Redirect to={"/main"} />;
 	}
 
 	return (
-		<div className={s.loginContainer}>
-			<LoginReduxForm onSubmit={onSubmit} />
+		<div className={s.login}>
+			<div className={s.loginContainer}>
+				<LoginReduxForm onSubmit={onSubmit} />
+			</div>
 		</div>
 	);
 };

@@ -1,0 +1,54 @@
+.flightsList {
+	max-width: 1200px;
+	min-width: 70vw;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	background-color: #fff;
+}
+.flightsList__container {
+	max-width: 1200px;
+	min-width: 70vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: khaki;
+	flex-direction: column;
+}
+
+@media (max-width: 555px) {
+	.flightsList__header {
+		display: flex;
+		flex-direction: column;
+	}
+	.flightsList__directions {
+		margin-bottom: 5px;
+	}
+}
+
+.flightsList__header {
+	max-width: 1200px;
+	min-width: 70vw;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.flightsList__directions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.flightsList__directions img {
+	margin: 0 5px;
+}
+.flightsList__dates {
+}
+.flightsList__images {
+}
+.flightsList__favourites {
+}
+.flightsList__list {
+}

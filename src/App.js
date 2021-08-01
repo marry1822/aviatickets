@@ -1,7 +1,6 @@
 import "./App.css";
-import Header from "../src/components/Header";
-import Login from "../src/components/Login";
-import MainPage from "../src/components/MainPage";
+import Login from "../src/components/Login/Login";
+import MainPage from "../src/components/MainPage/MainPage";
 import { Provider } from "react-redux";
 import store from "../src/store/store";
 import { BrowserRouter, Route } from "react-router-dom";

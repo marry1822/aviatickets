@@ -1,7 +1,6 @@
 .loginForm {
-	width: 35vw;
-	max-height: 30vh;
-	min-height: calc(30vw * 0.9);
+	min-height: 100%;
+	min-width: 100%;
 	background-color: #fff;
 	border-radius: 20px;
 	display: flex;
@@ -10,34 +9,70 @@
 	justify-content: center;
 }
 
+@media (max-width: 767px) {
+	.loginForm__form {
+		max-width: 100%;
+	}
+	.formControl {
+		max-width: 80%;
+	}
+	.loginForm__input {
+		max-width: 80%;
+	}
+	.loginForm__button {
+		max-width: 80%;
+	}
+}
+
 .loginForm__container {
-	width: 90%;
-	height: 90%;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	min-width: 50vw;
+	min-height: 70vh;
+	padding: 50px 10px;
+	box-sizing: border-box;
 	justify-content: center;
+	align-items: center;
 }
 
 .loginForm__formHeader {
 	align-self: center;
-	margin-bottom: 30px;
 	font-weight: bold;
+	margin-bottom: 40px;
 }
+
+.loginForm__form {
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .loginForm__inputLable {
 	display: block;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
+
+.formControl {
+	display: block;
+	box-sizing: border-box;
+	min-width: 60%;
+}
 .loginForm__input {
 	display: block;
-	width: calc(35vw * 0.9);
 	box-sizing: border-box;
+	min-width: 100%;
+	height: 30px;
 }
 
 .loginForm__button {
-	align-self: flex-end;
-	margin-top: 30px;
+	display: block;
+	box-sizing: border-box;
+	min-width: 60%;
+	margin: 20px 0;
+	height: 30px;
 }
 
 .loginForm__button:hover {
